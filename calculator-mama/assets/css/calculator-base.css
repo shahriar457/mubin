@@ -1,0 +1,447 @@
+/**
+ * Calculator Mama - Base Styles
+ *
+ * @package CalculatorMama
+ * @since 1.0.0
+ */
+
+/* ========================================================================
+   Base Calculator Styles
+   ======================================================================== */
+
+.cmama-calculator {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: var(--cmama-border-radius, 4px);
+	padding: var(--cmama-padding, 20px);
+	margin: 20px 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cmama-calculator-body {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+/* ========================================================================
+   Form Fields
+   ======================================================================== */
+
+.cmama-field-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.cmama-label {
+	font-weight: 600;
+	color: #333;
+	font-size: 14px;
+}
+
+.cmama-input,
+.cmama-select {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid #ddd;
+	border-radius: var(--cmama-border-radius, 4px);
+	background: var(--cmama-input-bg, #fff);
+	font-size: 16px;
+	transition: border-color 0.2s ease;
+}
+
+.cmama-input:focus,
+.cmama-select:focus {
+	outline: none;
+	border-color: var(--cmama-primary-color, #2271b1);
+	box-shadow: 0 0 0 1px var(--cmama-primary-color, #2271b1);
+}
+
+textarea.cmama-input {
+	resize: vertical;
+	font-family: inherit;
+}
+
+.cmama-field-suffix {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #666;
+	pointer-events: none;
+}
+
+/* Radio Groups */
+.cmama-radio-group {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.cmama-radio-group label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+/* ========================================================================
+   Buttons
+   ======================================================================== */
+
+.cmama-button {
+	background: var(--cmama-button-color, #2271b1);
+	color: #fff;
+	border: none;
+	border-radius: var(--cmama-border-radius, 4px);
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.cmama-button:hover {
+	opacity: 0.9;
+	transform: translateY(-1px);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cmama-button:active {
+	transform: translateY(0);
+}
+
+.cmama-button-secondary {
+	background: #f0f0f1;
+	color: #2c3338;
+	margin-top: 0;
+}
+
+.cmama-button-small {
+	padding: 6px 12px;
+	font-size: 14px;
+	width: auto;
+	margin: 5px 0;
+}
+
+/* ========================================================================
+   Results Display
+   ======================================================================== */
+
+.cmama-result {
+	background: var(--cmama-result-bg, #f0f0f1);
+	border-radius: var(--cmama-border-radius, 4px);
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.cmama-result-main {
+	text-align: center;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
+.cmama-result-label {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 8px;
+}
+
+.cmama-result-value {
+	font-size: 32px;
+	font-weight: 700;
+	color: var(--cmama-primary-color, #2271b1);
+	line-height: 1.2;
+}
+
+.cmama-result-sublabel {
+	font-size: 14px;
+	color: #666;
+	margin-top: 4px;
+}
+
+.cmama-result-breakdown {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.cmama-result-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+}
+
+.cmama-result-item span:first-child {
+	color: #666;
+}
+
+.cmama-result-item span:last-child {
+	font-weight: 600;
+	color: #333;
+}
+
+.cmama-result-note {
+	margin-top: 15px;
+	padding: 10px;
+	background: #fff;
+	border-left: 3px solid var(--cmama-primary-color, #2271b1);
+	font-size: 14px;
+	color: #666;
+}
+
+/* ========================================================================
+   SEO Content Sections
+   ======================================================================== */
+
+.cmama-introduction,
+.cmama-instructions {
+	margin: 20px 0;
+	line-height: 1.6;
+	color: #333;
+}
+
+.cmama-faq-section {
+	margin: 30px 0;
+}
+
+.cmama-faq-section h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.cmama-faq-item {
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: var(--cmama-border-radius, 4px);
+}
+
+.cmama-faq-question {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0 0 10px;
+	color: #333;
+}
+
+.cmama-faq-answer {
+	color: #666;
+	line-height: 1.6;
+}
+
+/* ========================================================================
+   Special Calculator Styles
+   ======================================================================== */
+
+/* Tabs */
+.cmama-tabs {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #ddd;
+}
+
+.cmama-tab-btn {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid transparent;
+	padding: 10px 15px;
+	margin-bottom: -2px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: #666;
+	transition: all 0.2s ease;
+}
+
+.cmama-tab-btn:hover {
+	color: var(--cmama-primary-color, #2271b1);
+}
+
+.cmama-tab-btn.active {
+	color: var(--cmama-primary-color, #2271b1);
+	border-bottom-color: var(--cmama-primary-color, #2271b1);
+}
+
+.cmama-tab-content {
+	display: none;
+}
+
+.cmama-tab-content.active {
+	display: block;
+}
+
+/* Fraction Calculator */
+.cmama-fraction-fields {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.cmama-fraction-slash {
+	font-size: 24px;
+	font-weight: 600;
+	color: #666;
+}
+
+/* Scientific Calculator */
+.cmama-sci-display {
+	text-align: right;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'Courier New', monospace;
+}
+
+.cmama-sci-buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+	margin-top: 15px;
+}
+
+.cmama-sci-btn {
+	padding: 15px 10px;
+	font-size: 16px;
+	font-weight: 600;
+	background: #f0f0f1;
+	border: 1px solid #ddd;
+	border-radius: var(--cmama-border-radius, 4px);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.cmama-sci-btn:hover {
+	background: #e0e0e1;
+}
+
+.cmama-sci-btn:active {
+	transform: scale(0.95);
+}
+
+.cmama-sci-equals {
+	background: var(--cmama-button-color, #2271b1);
+	color: #fff;
+	border-color: var(--cmama-button-color, #2271b1);
+}
+
+/* Tip Calculator */
+.cmama-tip-buttons {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.cmama-tip-preset {
+	flex: 1;
+	min-width: 60px;
+	padding: 8px 12px;
+	background: #f0f0f1;
+	border: 2px solid #ddd;
+	border-radius: var(--cmama-border-radius, 4px);
+	cursor: pointer;
+	font-weight: 600;
+	transition: all 0.2s ease;
+}
+
+.cmama-tip-preset:hover,
+.cmama-tip-preset.active {
+	background: var(--cmama-primary-color, #2271b1);
+	color: #fff;
+	border-color: var(--cmama-primary-color, #2271b1);
+}
+
+/* GPA Calculator */
+.cmama-gpa-course {
+	display: flex;
+	gap: 10px;
+	align-items: flex-end;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: var(--cmama-border-radius, 4px);
+	margin-bottom: 10px;
+}
+
+.cmama-gpa-course .cmama-field-group {
+	flex: 1;
+}
+
+/* Time Calculator */
+.cmama-time-fields {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.cmama-time-short {
+	width: 70px !important;
+	text-align: center;
+}
+
+/* ========================================================================
+   Error Messages
+   ======================================================================== */
+
+.cmama-error {
+	background: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+	border-radius: var(--cmama-border-radius, 4px);
+	padding: 12px 15px;
+	margin: 15px 0;
+}
+
+/* ========================================================================
+   Responsive Design
+   ======================================================================== */
+
+@media screen and (max-width: 768px) {
+	.cmama-calculator {
+		padding: 15px;
+	}
+
+	.cmama-result-value {
+		font-size: 24px;
+	}
+
+	.cmama-sci-buttons {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 6px;
+	}
+
+	.cmama-sci-btn {
+		padding: 12px 8px;
+		font-size: 14px;
+	}
+
+	.cmama-gpa-course {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.cmama-tip-buttons {
+		flex-direction: column;
+	}
+
+	.cmama-tip-preset {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cmama-button {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+	.cmama-result-value {
+		font-size: 20px;
+	}
+}
