@@ -1,0 +1,674 @@
+/**
+ * Calculator Mama - Frontend Styles
+ *
+ * @package CalculatorMama
+ * @since 1.0.0
+ */
+
+/* CSS Custom Properties for Theming */
+:root {
+    --cmama-primary-color: #007cba;
+    --cmama-button-color: #007cba;
+    --cmama-input-color: #ffffff;
+    --cmama-result-color: #f0f0f0;
+    --cmama-border-radius: 4px;
+    --cmama-padding: 20px;
+    --cmama-font-family: inherit;
+    --cmama-text-color: #333333;
+    --cmama-border-color: #ddd;
+    --cmama-success-color: #28a745;
+    --cmama-warning-color: #ffc107;
+    --cmama-error-color: #dc3545;
+    --cmama-info-color: #17a2b8;
+}
+
+/* Main Calculator Container */
+.cmama-calculator {
+    font-family: var(--cmama-font-family);
+    background: #ffffff;
+    border: 1px solid var(--cmama-border-color);
+    border-radius: var(--cmama-border-radius);
+    padding: var(--cmama-padding);
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.cmama-calculator * {
+    box-sizing: border-box;
+}
+
+/* Calculator Title */
+.cmama-calculator-title {
+    color: var(--cmama-primary-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+/* Calculator Description */
+.cmama-calculator-description {
+    color: var(--cmama-text-color);
+    font-size: 0.95em;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* Form Styles */
+.cmama-calculator-form {
+    width: 100%;
+}
+
+/* Fields Container */
+.cmama-calculator-fields {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Individual Field */
+.cmama-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.cmama-field-label {
+    font-weight: 500;
+    color: var(--cmama-text-color);
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.cmama-required {
+    color: var(--cmama-error-color);
+    margin-left: 3px;
+}
+
+/* Input Styles */
+.cmama-field-input {
+    background: var(--cmama-input-color);
+    border: 1px solid var(--cmama-border-color);
+    border-radius: var(--cmama-border-radius);
+    padding: 10px 12px;
+    font-size: 0.95em;
+    color: var(--cmama-text-color);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+.cmama-field-input:focus {
+    outline: none;
+    border-color: var(--cmama-primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.1);
+}
+
+.cmama-field-input:invalid {
+    border-color: var(--cmama-error-color);
+}
+
+/* Select Styles */
+select.cmama-field-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 32px;
+}
+
+/* Radio Button Styles */
+.cmama-radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.cmama-radio-label input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--cmama-primary-color);
+}
+
+/* Checkbox Styles */
+.cmama-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.cmama-checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: var(--cmama-primary-color);
+}
+
+/* Field Description */
+.cmama-field-description {
+    font-size: 0.8em;
+    color: var(--cmama-text-color);
+    opacity: 0.7;
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+/* Action Buttons */
+.cmama-calculator-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.cmama-calculate-btn,
+.cmama-reset-btn {
+    background: var(--cmama-button-color);
+    color: white;
+    border: none;
+    border-radius: var(--cmama-border-radius);
+    padding: 12px 24px;
+    font-size: 0.95em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+}
+
+.cmama-calculate-btn:hover {
+    background: color-mix(in srgb, var(--cmama-button-color) 85%, black);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cmama-reset-btn {
+    background: #6c757d;
+}
+
+.cmama-reset-btn:hover {
+    background: #5a6268;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cmama-calculate-btn:disabled,
+.cmama-reset-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Loading State */
+.cmama-calculating .cmama-calculate-btn::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: cmama-spin 1s linear infinite;
+    margin-right: 8px;
+}
+
+@keyframes cmama-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Result Container */
+.cmama-calculator-result {
+    background: var(--cmama-result-color);
+    border: 1px solid var(--cmama-border-color);
+    border-radius: var(--cmama-border-radius);
+    padding: var(--cmama-padding);
+    margin-top: 20px;
+}
+
+.cmama-result-title {
+    color: var(--cmama-primary-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+/* Result Sections */
+.cmama-result-section {
+    margin-bottom: 20px;
+}
+
+.cmama-result-section:last-child {
+    margin-bottom: 0;
+}
+
+.cmama-result-section h4 {
+    color: var(--cmama-primary-color);
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cmama-border-color);
+}
+
+/* Result Items */
+.cmama-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cmama-result-item:last-child {
+    border-bottom: none;
+}
+
+.cmama-result-label {
+    font-weight: 500;
+    color: var(--cmama-text-color);
+    flex: 1;
+}
+
+.cmama-result-value {
+    font-weight: 600;
+    color: var(--cmama-primary-color);
+    text-align: right;
+    margin-left: 10px;
+}
+
+/* Primary Result Highlighting */
+.cmama-primary-result {
+    background: rgba(0, 124, 186, 0.05);
+    padding: 12px;
+    border-radius: var(--cmama-border-radius);
+    border: 1px solid rgba(0, 124, 186, 0.1);
+}
+
+.cmama-primary-result .cmama-result-value {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.cmama-total-result {
+    background: rgba(0, 124, 186, 0.08);
+    padding: 10px;
+    border-radius: var(--cmama-border-radius);
+    font-weight: 600;
+}
+
+/* Error Display */
+.cmama-calculator-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: var(--cmama-border-radius);
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.cmama-error-message {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Category-Specific Styles */
+
+/* Financial Calculators */
+.cmama-category-financial .cmama-calculator-title {
+    color: #28a745;
+}
+
+.cmama-category-financial .cmama-primary-result {
+    background: rgba(40, 167, 69, 0.05);
+    border-color: rgba(40, 167, 69, 0.1);
+}
+
+/* Health Calculators */
+.cmama-category-health .cmama-calculator-title {
+    color: #dc3545;
+}
+
+.cmama-category-health .cmama-primary-result {
+    background: rgba(220, 53, 69, 0.05);
+    border-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Math Calculators */
+.cmama-category-math .cmama-calculator-title {
+    color: #6f42c1;
+}
+
+.cmama-category-math .cmama-primary-result {
+    background: rgba(111, 66, 193, 0.05);
+    border-color: rgba(111, 66, 193, 0.1);
+}
+
+/* Other Calculators */
+.cmama-category-other .cmama-calculator-title {
+    color: #fd7e14;
+}
+
+.cmama-category-other .cmama-primary-result {
+    background: rgba(253, 126, 20, 0.05);
+    border-color: rgba(253, 126, 20, 0.1);
+}
+
+/* Specific Calculator Styles */
+
+/* BMI Calculator */
+.cmama-bmi-results .cmama-bmi-display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cmama-bmi-number {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.cmama-bmi-category {
+    display: inline-block;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cmama-bmi-scale-bar {
+    display: flex;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.cmama-scale-segment {
+    flex: 1;
+    cursor: pointer;
+}
+
+.cmama-scale-segment.cmama-underweight {
+    background: #3498db;
+}
+
+.cmama-scale-segment.cmama-normal {
+    background: #27ae60;
+}
+
+.cmama-scale-segment.cmama-overweight {
+    background: #f39c12;
+}
+
+.cmama-scale-segment.cmama-obese {
+    background: #e74c3c;
+}
+
+/* Age Calculator */
+.cmama-age-results .cmama-age-display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cmama-age-number {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--cmama-primary-color);
+    line-height: 1;
+}
+
+.cmama-age-label {
+    font-size: 1.2em;
+    color: var(--cmama-text-color);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cmama-age-grid,
+.cmama-time-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.cmama-age-item,
+.cmama-time-item {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 124, 186, 0.05);
+    border-radius: var(--cmama-border-radius);
+    border: 1px solid rgba(0, 124, 186, 0.1);
+}
+
+.cmama-age-value,
+.cmama-time-value {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--cmama-primary-color);
+    line-height: 1;
+}
+
+.cmama-age-unit,
+.cmama-time-unit {
+    display: block;
+    font-size: 0.8em;
+    color: var(--cmama-text-color);
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+/* Percentage Calculator */
+.cmama-percentage-results .cmama-formula-display {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: var(--cmama-border-radius);
+    padding: 15px;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.cmama-reference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.cmama-reference-item {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: var(--cmama-border-radius);
+    padding: 15px;
+}
+
+.cmama-reference-item code {
+    background: #e9ecef;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 8px;
+}
+
+/* Lists */
+.cmama-risk-list,
+.cmama-recommendation-list,
+.cmama-facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.cmama-risk-list li,
+.cmama-recommendation-list li,
+.cmama-facts-list li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cmama-risk-list li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.cmama-recommendation-list li::before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.cmama-facts-list li::before {
+    content: "🎉";
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* Disclaimer */
+.cmama-disclaimer {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: var(--cmama-border-radius);
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #856404;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cmama-calculator {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .cmama-calculator-actions {
+        flex-direction: column;
+    }
+    
+    .cmama-calculate-btn,
+    .cmama-reset-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cmama-result-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .cmama-result-value {
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .cmama-age-number {
+        font-size: 3em;
+    }
+    
+    .cmama-bmi-number {
+        font-size: 2.5em;
+    }
+    
+    .cmama-age-grid,
+    .cmama-time-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cmama-reference-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cmama-calculator {
+        padding: 12px;
+        margin: 10px 0;
+    }
+    
+    .cmama-age-grid,
+    .cmama-time-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cmama-age-number {
+        font-size: 2.5em;
+    }
+    
+    .cmama-bmi-number {
+        font-size: 2em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .cmama-calculator {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    
+    .cmama-calculator-actions {
+        display: none;
+    }
+    
+    .cmama-calculator-result {
+        background: transparent;
+        border: 1px solid #000;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .cmama-calculator {
+        border: 2px solid #000;
+    }
+    
+    .cmama-field-input {
+        border: 2px solid #000;
+    }
+    
+    .cmama-calculate-btn,
+    .cmama-reset-btn {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .cmama-calculate-btn,
+    .cmama-reset-btn,
+    .cmama-field-input {
+        transition: none;
+    }
+    
+    .cmama-calculating .cmama-calculate-btn::before {
+        animation: none;
+    }
+}

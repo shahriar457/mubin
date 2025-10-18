@@ -1,0 +1,375 @@
+/**
+ * Calculator Mama - Gutenberg Block Styles
+ *
+ * @package CalculatorMama
+ * @since 1.0.0
+ */
+
+/* Block Editor Styles */
+.cmama-block-editor {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    background: #fff;
+    margin: 10px 0;
+}
+
+.cmama-block-editor h4 {
+    color: #007cba;
+    font-size: 1.1em;
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Calculator Header */
+.cmama-calculator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cmama-calculator-slug {
+    background: #f0f0f0;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-family: monospace;
+}
+
+/* Introduction Editor */
+.cmama-introduction-editor {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #007cba;
+}
+
+.cmama-introduction-editor .cmama-introduction {
+    margin-top: 10px;
+}
+
+/* Calculator Editor */
+.cmama-calculator-editor {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 2px dashed #ddd;
+}
+
+/* Instructions Editor */
+.cmama-instructions-editor {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #28a745;
+}
+
+.cmama-instructions-editor .cmama-instructions {
+    margin-top: 10px;
+}
+
+/* FAQ Editor */
+.cmama-faq-editor {
+    margin: 15px 0;
+}
+
+.cmama-faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cmama-faq-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1em;
+}
+
+.cmama-faq-empty {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px dashed #ddd;
+}
+
+.cmama-faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.cmama-faq-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cmama-faq-number {
+    background: #007cba;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.cmama-faq-item .components-base-control {
+    margin-bottom: 15px;
+}
+
+.cmama-faq-item .components-base-control:last-child {
+    margin-bottom: 0;
+}
+
+/* FAQ Preview */
+.cmama-faq-preview {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #ffc107;
+}
+
+.cmama-faq-preview .cmama-faqs {
+    margin-top: 10px;
+}
+
+.cmama-faq-preview .cmama-faq-item {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.cmama-faq-preview .cmama-faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.cmama-faq-question {
+    color: #333;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.cmama-faq-answer {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* SEO Tips */
+.cmama-seo-tips {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f5e8;
+    border-radius: 4px;
+    border-left: 4px solid #28a745;
+}
+
+.cmama-seo-tips ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+.cmama-seo-tips li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #2d5a2d;
+    line-height: 1.4;
+}
+
+.cmama-seo-tips li:last-child {
+    margin-bottom: 0;
+}
+
+/* Preview Loading */
+.cmama-preview-loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+.cmama-preview-loading .components-spinner {
+    margin-bottom: 15px;
+}
+
+/* Calculator Preview */
+.cmama-calculator-preview {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    background: white;
+    margin-top: 10px;
+}
+
+/* Inspector Controls Styling */
+.components-panel__body .cmama-faq-editor {
+    margin: 0;
+}
+
+.components-panel__body .cmama-faq-header {
+    margin-bottom: 10px;
+}
+
+.components-panel__body .cmama-faq-item {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.components-panel__body .cmama-faq-item-header {
+    margin-bottom: 10px;
+}
+
+.components-panel__body .cmama-faq-number {
+    font-size: 0.7em;
+    padding: 2px 6px;
+}
+
+/* Rich Text Styling */
+.cmama-introduction .wp-block-paragraph,
+.cmama-instructions .wp-block-paragraph {
+    margin-bottom: 10px;
+}
+
+.cmama-introduction .wp-block-paragraph:last-child,
+.cmama-instructions .wp-block-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Placeholder Styling */
+.wp-block-calculator-mama-calculator .components-placeholder {
+    min-height: 200px;
+}
+
+.wp-block-calculator-mama-calculator .components-placeholder__label {
+    font-weight: 600;
+    color: #007cba;
+}
+
+.wp-block-calculator-mama-calculator .components-placeholder__instructions {
+    margin-bottom: 20px;
+}
+
+/* Block Toolbar */
+.wp-block-calculator-mama-calculator .block-editor-block-toolbar {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Block Alignment */
+.wp-block-calculator-mama-calculator.alignwide {
+    max-width: 1200px;
+}
+
+.wp-block-calculator-mama-calculator.alignfull {
+    max-width: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cmama-calculator-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cmama-faq-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cmama-faq-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cmama-block-editor {
+        padding: 15px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .cmama-block-editor {
+        background: #1e1e1e;
+        border-color: #444;
+        color: #fff;
+    }
+    
+    .cmama-calculator-slug {
+        background: #333;
+        color: #ccc;
+    }
+    
+    .cmama-introduction-editor,
+    .cmama-instructions-editor,
+    .cmama-faq-preview {
+        background: #2a2a2a;
+    }
+    
+    .cmama-calculator-editor {
+        background: #2a2a2a;
+        border-color: #555;
+    }
+    
+    .cmama-faq-item {
+        background: #2a2a2a;
+        border-color: #444;
+    }
+    
+    .cmama-faq-preview .cmama-faq-item {
+        background: #1e1e1e;
+        border-color: #444;
+    }
+    
+    .cmama-seo-tips {
+        background: #1a3d1a;
+        border-color: #28a745;
+    }
+    
+    .cmama-seo-tips li {
+        color: #90ee90;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .cmama-block-editor {
+        border: 2px solid #000;
+    }
+    
+    .cmama-calculator-editor {
+        border: 2px dashed #000;
+    }
+    
+    .cmama-faq-item {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .cmama-block-editor * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

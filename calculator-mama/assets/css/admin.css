@@ -1,0 +1,1035 @@
+/**
+ * Calculator Mama - Admin Styles
+ *
+ * @package CalculatorMama
+ * @since 1.0.0
+ */
+
+/* Admin Body Class */
+.calculator-mama-admin {
+    /* Custom admin styles can be added here */
+}
+
+/* Main Admin Container */
+.cmama-dashboard,
+.cmama-library,
+.cmama-appearance {
+    max-width: 1200px;
+}
+
+/* Header Styles */
+.cmama-dashboard .wp-heading-inline,
+.cmama-library .wp-heading-inline,
+.cmama-appearance .wp-heading-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cmama-version {
+    background: #007cba;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+/* Dashboard Styles */
+.cmama-dashboard-content {
+    margin-top: 20px;
+}
+
+.cmama-welcome-section {
+    margin-bottom: 30px;
+}
+
+.cmama-welcome-card {
+    background: linear-gradient(135deg, #007cba 0%, #005a87 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 4px 12px rgba(0, 124, 186, 0.2);
+}
+
+.cmama-welcome-content {
+    flex: 1;
+}
+
+.cmama-welcome-card h2 {
+    color: white;
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+}
+
+.cmama-welcome-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.cmama-quick-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cmama-quick-actions .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.cmama-quick-actions .button-primary {
+    background: white;
+    color: #007cba;
+    border: none;
+}
+
+.cmama-quick-actions .button-primary:hover {
+    background: #f0f8ff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cmama-quick-actions .button-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cmama-quick-actions .button-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.cmama-welcome-image {
+    flex-shrink: 0;
+}
+
+.cmama-welcome-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Statistics Grid */
+.cmama-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cmama-stat-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cmama-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cmama-stat-card.active {
+    border-color: #28a745;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.cmama-stat-icon {
+    font-size: 2em;
+    color: #007cba;
+}
+
+.cmama-stat-card.active .cmama-stat-icon {
+    color: white;
+}
+
+.cmama-stat-content h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+.cmama-stat-content p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Dashboard Grid */
+.cmama-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.cmama-dashboard-widget {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cmama-dashboard-widget h3 {
+    color: #007cba;
+    font-size: 1.2em;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Categories List */
+.cmama-categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cmama-category-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s ease;
+}
+
+.cmama-category-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.cmama-category-icon {
+    font-size: 1.5em;
+    color: #007cba;
+    width: 40px;
+    text-align: center;
+}
+
+.cmama-category-content h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 1em;
+}
+
+.cmama-category-content p {
+    margin: 0 0 8px 0;
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.cmama-category-count {
+    font-size: 0.8em;
+    color: #007cba;
+    font-weight: 600;
+}
+
+/* Popular Calculators */
+.cmama-popular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cmama-popular-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #007cba;
+}
+
+.cmama-popular-content h4 {
+    margin: 0 0 4px 0;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.cmama-popular-content p {
+    margin: 0 0 4px 0;
+    font-size: 0.8em;
+    color: #666;
+    line-height: 1.3;
+}
+
+.cmama-popular-category {
+    font-size: 0.75em;
+    color: #007cba;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cmama-popular-usage {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cmama-usage-count {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #007cba;
+}
+
+.cmama-usage-label {
+    font-size: 0.7em;
+    color: #666;
+    text-transform: uppercase;
+}
+
+/* Quick Start Guide */
+.cmama-quick-start {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cmama-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cmama-step-number {
+    background: #007cba;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9em;
+    flex-shrink: 0;
+}
+
+.cmama-step-content h4 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 1em;
+}
+
+.cmama-step-content p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.cmama-step-link {
+    color: #007cba;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.cmama-step-link:hover {
+    text-decoration: underline;
+}
+
+/* System Info */
+.cmama-system-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.cmama-info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cmama-info-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.cmama-info-value {
+    color: #666;
+    font-family: monospace;
+}
+
+.cmama-system-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Library Styles */
+.cmama-library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cmama-library-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.cmama-stat {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.cmama-stat strong {
+    color: #007cba;
+    font-size: 1.2em;
+}
+
+.cmama-library-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Filters */
+.cmama-library-filters {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.cmama-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 150px;
+}
+
+.cmama-filter-group label {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #333;
+}
+
+.cmama-filter-group input,
+.cmama-filter-group select {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Calculator Grid */
+.cmama-calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cmama-calculator-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cmama-calculator-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cmama-calculator-card[data-active="1"] {
+    border-left: 4px solid #28a745;
+}
+
+.cmama-calculator-card[data-active="0"] {
+    border-left: 4px solid #dc3545;
+}
+
+.cmama-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cmama-category-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cmama-category-financial {
+    background: #d4edda;
+    color: #155724;
+}
+
+.cmama-category-health {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.cmama-category-math {
+    background: #e2e3f1;
+    color: #383d41;
+}
+
+.cmama-category-other {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* Toggle Switch */
+.cmama-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.cmama-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.cmama-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.2s;
+    border-radius: 24px;
+}
+
+.cmama-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.cmama-toggle input:checked + .cmama-toggle-slider {
+    background-color: #28a745;
+}
+
+.cmama-toggle input:checked + .cmama-toggle-slider:before {
+    transform: translateX(26px);
+}
+
+/* Card Content */
+.cmama-card-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.cmama-card-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 12px 0;
+}
+
+.cmama-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.cmama-tag {
+    background: #e9ecef;
+    color: #495057;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.cmama-tag-more {
+    background: #007cba;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+/* Card Footer */
+.cmama-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.cmama-card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.cmama-card-actions .button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 10px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.cmama-status-indicator {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cmama-status-indicator.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.cmama-status-indicator.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Empty State */
+.cmama-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.cmama-empty-icon {
+    font-size: 4em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.cmama-empty-state h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Loading State */
+.cmama-loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+.cmama-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007cba;
+    border-radius: 50%;
+    animation: cmama-spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes cmama-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Appearance Styles */
+.cmama-appearance-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.cmama-appearance-settings {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cmama-settings-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cmama-settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.cmama-settings-section h2 {
+    color: #007cba;
+    font-size: 1.3em;
+    margin: 0 0 10px 0;
+}
+
+.cmama-settings-section .description {
+    margin-bottom: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Range Inputs */
+input[type="range"] {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.cmama-range-value {
+    font-weight: 600;
+    color: #007cba;
+    min-width: 40px;
+    display: inline-block;
+}
+
+/* Custom CSS Help */
+.cmama-css-help {
+    margin-top: 10px;
+}
+
+.cmama-css-help summary {
+    cursor: pointer;
+    color: #007cba;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.cmama-css-examples {
+    margin-top: 10px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.cmama-css-examples h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.cmama-css-examples ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cmama-css-examples li {
+    margin-bottom: 5px;
+    font-size: 0.85em;
+}
+
+.cmama-css-examples code {
+    background: #e9ecef;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 0.9em;
+}
+
+/* Settings Actions */
+.cmama-settings-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+    flex-wrap: wrap;
+}
+
+.cmama-settings-actions .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    font-size: 1em;
+}
+
+/* Appearance Preview */
+.cmama-appearance-preview {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    top: 32px;
+    height: fit-content;
+}
+
+.cmama-preview-header h3 {
+    color: #007cba;
+    margin: 0 0 10px 0;
+}
+
+.cmama-preview-container {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    background: #f8f9fa;
+    margin: 15px 0;
+}
+
+.cmama-preview-actions {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Modal Styles */
+.cmama-modal {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cmama-modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cmama-modal-large {
+    max-width: 800px;
+}
+
+.cmama-modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cmama-modal-header h3 {
+    margin: 0;
+    color: #007cba;
+}
+
+.cmama-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cmama-modal-close:hover {
+    color: #333;
+}
+
+.cmama-modal-body {
+    padding: 20px;
+}
+
+.cmama-modal-footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Shortcode Display */
+.cmama-shortcode-display {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.cmama-shortcode-display input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+    background: #f8f9fa;
+}
+
+.cmama-shortcode-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.cmama-shortcode-info h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.cmama-shortcode-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cmama-shortcode-info code {
+    background: #e9ecef;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* Activity List */
+.cmama-activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cmama-activity-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.cmama-activity-icon {
+    color: #007cba;
+    font-size: 1.2em;
+}
+
+.cmama-activity-content p {
+    margin: 0 0 4px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.cmama-activity-time {
+    font-size: 0.75em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .cmama-appearance-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .cmama-appearance-preview {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .cmama-welcome-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cmama-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cmama-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cmama-calculator-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cmama-library-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .cmama-library-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cmama-filter-group {
+        min-width: auto;
+    }
+    
+    .cmama-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cmama-modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cmama-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cmama-quick-actions {
+        flex-direction: column;
+    }
+    
+    .cmama-quick-actions .button {
+        justify-content: center;
+    }
+}
