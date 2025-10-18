@@ -1,0 +1,5 @@
+#cmama .cmama-admin-card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:16px}
+#cmama .cmama-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:900px){#cmama .cmama-grid{grid-template-columns:2fr 1fr}}
+#cmama .cmama-toggle{display:flex;align-items:center;justify-content:space-between;border:1px solid #e5e7eb;border-radius:8px;padding:10px}
+#cmama .cmama-color{width:100%}

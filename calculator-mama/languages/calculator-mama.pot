@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Calculator Mama 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com\n"
+"POT-Creation-Date: 2025-10-18 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: AI\n"
+
+#: includes/calculators/financial/class-cmama-calculator-mortgage.php:20
+msgid "Loan Amount"
+msgstr ""
+
+#: includes/calculators/financial/class-cmama-calculator-mortgage.php:23
+msgid "Interest Rate (%)"
+msgstr ""
+
+#: includes/calculators/financial/class-cmama-calculator-mortgage.php:26
+msgid "Term (years)"
+msgstr ""
+
+#: includes/calculators/financial/class-cmama-calculator-mortgage.php:30
+msgid "Calculate"
+msgstr ""
+
+#: includes/calculators/health/class-cmama-calculator-bmi.php:20
+msgid "Height (cm)"
+msgstr ""
+
+#: includes/calculators/health/class-cmama-calculator-bmi.php:23
+msgid "Weight (kg)"
+msgstr ""
+
+#: includes/calculators/health/class-cmama-calculator-bmi.php:27
+msgid "Calculate"
+msgstr ""
+
+#: includes/class-cmama-block.php:55
+msgid "FAQs"
+msgstr ""
+
+#: assets/blocks/block.js:9
+msgid "Calculator Mama"
+msgstr ""
+
+#: assets/blocks/block.js:19
+msgid "Calculator Settings"
+msgstr ""
+
+#: assets/blocks/block.js:21
+msgid "Calculator"
+msgstr ""
+
+#: assets/blocks/block.js:27
+msgid "SEO Content"
+msgstr ""
+
+#: assets/blocks/block.js:29
+msgid "Introduction (RichText in front-end)"
+msgstr ""
+
+#: assets/blocks/block.js:34
+msgid "Usage Instructions (RichText in front-end)"
+msgstr ""
+
+#: assets/blocks/block.js:40
+msgid "FAQs"
+msgstr ""
+
+#: assets/blocks/block.js:47
+msgid "Question"
+msgstr ""
+
+#: assets/blocks/block.js:56
+msgid "Answer"
+msgstr ""
+
+#: assets/blocks/block.js:63
+msgid "Remove"
+msgstr ""
+
+#: assets/blocks/block.js:68
+msgid "Add FAQ"
+msgstr ""
+
+#: assets/blocks/block.js:74
+msgid "Preview"
+msgstr ""
+
+#: assets/blocks/block.js:75
+msgid "Live preview appears on front-end. Choose calculator above."
+msgstr ""
