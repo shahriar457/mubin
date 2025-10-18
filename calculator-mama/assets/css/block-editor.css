@@ -1,0 +1,103 @@
+/**
+ * Calculator Mama - Block Editor Styles
+ *
+ * @package CalculatorMama
+ * @since 1.0.0
+ */
+
+.cmama-block-editor {
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.cmama-placeholder {
+	text-align: center;
+	padding: 60px 20px;
+	background: #f0f0f1;
+	border-radius: 4px;
+}
+
+.cmama-placeholder .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #2271b1;
+	margin-bottom: 15px;
+}
+
+.cmama-placeholder p {
+	color: #666;
+	font-size: 16px;
+	margin: 0;
+}
+
+.cmama-calculator-preview {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.cmama-calculator-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px;
+	background: #2271b1;
+	color: #fff;
+	border-radius: 4px;
+}
+
+.cmama-calculator-header .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.cmama-calculator-placeholder {
+	padding: 40px 20px;
+	background: #f0f0f1;
+	border: 2px dashed #ddd;
+	border-radius: 4px;
+	text-align: center;
+	color: #666;
+	font-style: italic;
+}
+
+.cmama-introduction-editor,
+.cmama-instructions-editor {
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #f9f9f9;
+	min-height: 80px;
+}
+
+.cmama-faq-preview {
+	padding: 15px;
+	background: #f0f0f1;
+	border-radius: 4px;
+	color: #666;
+}
+
+.cmama-faq-editor {
+	padding: 15px;
+	margin-bottom: 15px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.cmama-calculator-info {
+	padding: 10px;
+	background: #f0f0f1;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.cmama-calculator-info p {
+	margin: 0;
+	font-size: 13px;
+	color: #666;
+}

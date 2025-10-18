@@ -1,0 +1,134 @@
+# Copyright (C) 2024 Calculator Mama
+# This file is distributed under the same license as the Calculator Mama plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Calculator Mama 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/calculator-mama\n"
+"POT-Creation-Date: 2024-10-18 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: calculator-mama.php
+msgid "Calculator Mama"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Calculator Library"
+msgstr ""
+
+msgid "Appearance"
+msgstr ""
+
+msgid "Welcome to Calculator Mama"
+msgstr ""
+
+msgid "Transform Your Website into an Organic Traffic Powerhouse"
+msgstr ""
+
+msgid "Over 150 interactive calculators with built-in SEO optimization to drive engagement and rankings."
+msgstr ""
+
+msgid "Total Calculators"
+msgstr ""
+
+msgid "Active Calculators"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "SEO Optimization"
+msgstr ""
+
+msgid "Financial"
+msgstr ""
+
+msgid "Health & Fitness"
+msgstr ""
+
+msgid "Math"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Mortgage Calculator"
+msgstr ""
+
+msgid "Calculate monthly mortgage payments including principal, interest, taxes, and insurance."
+msgstr ""
+
+msgid "BMI Calculator"
+msgstr ""
+
+msgid "Calculate your Body Mass Index (BMI) and weight category."
+msgstr ""
+
+msgid "Percentage Calculator"
+msgstr ""
+
+msgid "Calculate percentages, percentage increase/decrease, and percentage differences."
+msgstr ""
+
+msgid "Age Calculator"
+msgstr ""
+
+msgid "Calculate age in years, months, weeks, days, hours, and minutes."
+msgstr ""
+
+msgid "Calculate"
+msgstr ""
+
+msgid "Calculate Payment"
+msgstr ""
+
+msgid "Calculate BMI"
+msgstr ""
+
+msgid "Calculate ROI"
+msgstr ""
+
+msgid "Calculate Age"
+msgstr ""
+
+msgid "Result"
+msgstr ""
+
+msgid "Please enter valid values."
+msgstr ""
+
+msgid "Calculator not found."
+msgstr ""
+
+msgid "This calculator is not active."
+msgstr ""
+
+msgid "Please specify a calculator slug."
+msgstr ""
+
+msgid "Please select a calculator."
+msgstr ""
+
+msgid "Select a calculator..."
+msgstr ""
+
+msgid "Frequently Asked Questions"
+msgstr ""
+
+msgid "Add FAQ"
+msgstr ""
+
+msgid "Remove FAQ"
+msgstr ""
+
+msgid "Question"
+msgstr ""
+
+msgid "Answer"
+msgstr ""

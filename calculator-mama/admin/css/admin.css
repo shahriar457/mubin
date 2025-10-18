@@ -1,0 +1,498 @@
+/**
+ * Calculator Mama - Admin Styles
+ *
+ * @package CalculatorMama
+ * @since 1.0.0
+ */
+
+/* ========================================================================
+   Dashboard Styles
+   ======================================================================== */
+
+.cmama-dashboard {
+	max-width: 1400px;
+}
+
+.cmama-welcome-panel {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 30px;
+	margin: 20px 0;
+}
+
+.cmama-welcome-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.cmama-welcome-header h2 {
+	font-size: 28px;
+	margin: 0 0 10px;
+	color: #1d2327;
+}
+
+.cmama-welcome-subtitle {
+	font-size: 16px;
+	color: #50575e;
+	margin: 0;
+}
+
+/* Stats Grid */
+.cmama-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin-top: 30px;
+}
+
+.cmama-stat-card {
+	background: #f6f7f7;
+	border-radius: 8px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.cmama-stat-icon {
+	width: 50px;
+	height: 50px;
+	background: #2271b1;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+.cmama-stat-icon-success {
+	background: #00a32a;
+}
+
+.cmama-stat-icon-info {
+	background: #72aee6;
+}
+
+.cmama-stat-icon-warning {
+	background: #f0b849;
+}
+
+.cmama-stat-value {
+	font-size: 32px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1;
+}
+
+.cmama-stat-label {
+	font-size: 14px;
+	color: #50575e;
+	margin-top: 5px;
+}
+
+/* Quick Links */
+.cmama-quick-links {
+	margin: 40px 0;
+}
+
+.cmama-links-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.cmama-quick-link {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 25px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	display: block;
+}
+
+.cmama-quick-link:hover {
+	border-color: #2271b1;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	transform: translateY(-2px);
+}
+
+.cmama-quick-link .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: #2271b1;
+	margin-bottom: 15px;
+}
+
+.cmama-quick-link h3 {
+	margin: 0 0 10px;
+	color: #1d2327;
+	font-size: 18px;
+}
+
+.cmama-quick-link p {
+	margin: 0;
+	color: #50575e;
+	font-size: 14px;
+}
+
+/* Getting Started */
+.cmama-getting-started {
+	margin: 40px 0;
+}
+
+.cmama-steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.cmama-step {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 25px;
+	position: relative;
+}
+
+.cmama-step-number {
+	width: 40px;
+	height: 40px;
+	background: #2271b1;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.cmama-step h3 {
+	margin: 0 0 10px;
+	font-size: 16px;
+}
+
+.cmama-step p {
+	margin: 0;
+	color: #50575e;
+	font-size: 14px;
+}
+
+/* Categories Overview */
+.cmama-categories-overview {
+	margin: 40px 0;
+}
+
+.cmama-categories-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.cmama-category-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 25px;
+	text-align: center;
+}
+
+.cmama-category-card h3 {
+	margin: 0 0 10px;
+	font-size: 18px;
+}
+
+.cmama-category-card p {
+	margin: 0 0 15px;
+	color: #50575e;
+}
+
+/* ========================================================================
+   Calculator Library Styles
+   ======================================================================== */
+
+.cmama-library-header {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.cmama-library-filters form {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.cmama-library-filters select,
+.cmama-library-filters input[type="search"] {
+	height: 36px;
+}
+
+.cmama-library-actions {
+	display: flex;
+	gap: 10px;
+}
+
+/* Calculators Grid */
+.cmama-calculators-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.cmama-calculator-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	transition: box-shadow 0.2s ease;
+}
+
+.cmama-calculator-card:hover {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cmama-calculator-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.cmama-calculator-header h3 {
+	margin: 0;
+	font-size: 16px;
+	color: #1d2327;
+}
+
+/* Toggle Switch */
+.cmama-toggle {
+	position: relative;
+	display: inline-block;
+	width: 44px;
+	height: 24px;
+}
+
+.cmama-toggle input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.cmama-toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #dcdcde;
+	transition: 0.3s;
+	border-radius: 24px;
+}
+
+.cmama-toggle-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+.cmama-toggle input:checked + .cmama-toggle-slider {
+	background-color: #2271b1;
+}
+
+.cmama-toggle input:checked + .cmama-toggle-slider:before {
+	transform: translateX(20px);
+}
+
+.cmama-calculator-body {
+	margin-bottom: 15px;
+}
+
+.cmama-calculator-description {
+	color: #50575e;
+	font-size: 14px;
+	margin: 0 0 10px;
+	line-height: 1.5;
+}
+
+.cmama-calculator-meta {
+	margin-top: 10px;
+}
+
+.cmama-calculator-category {
+	display: inline-block;
+	background: #f0f0f1;
+	color: #50575e;
+	padding: 4px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.cmama-calculator-footer {
+	display: flex;
+	gap: 10px;
+}
+
+.cmama-copy-shortcode {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.cmama-copy-shortcode .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.cmama-no-results {
+	grid-column: 1 / -1;
+	text-align: center;
+	padding: 40px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+}
+
+/* ========================================================================
+   Appearance Settings Styles
+   ======================================================================== */
+
+.cmama-appearance-grid {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 30px;
+	margin: 20px 0;
+}
+
+.cmama-settings-section {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.cmama-settings-section:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.cmama-settings-section h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #2271b1;
+}
+
+.cmama-settings-section-full {
+	grid-column: 1 / -1;
+}
+
+.cmama-color-picker {
+	max-width: 100px;
+}
+
+/* Preview Section */
+.cmama-preview-section {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 30px;
+	margin: 20px 0;
+}
+
+.cmama-preview-section h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.cmama-preview-calculator {
+	padding: 20px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+.cmama-preview-demo {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+/* ========================================================================
+   Responsive Styles
+   ======================================================================== */
+
+@media screen and (max-width: 782px) {
+	.cmama-stats-grid,
+	.cmama-links-grid,
+	.cmama-steps,
+	.cmama-categories-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.cmama-calculators-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.cmama-library-header {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	
+	.cmama-library-filters form {
+		flex-direction: column;
+	}
+	
+	.cmama-library-filters select,
+	.cmama-library-filters input[type="search"] {
+		width: 100%;
+	}
+}
+
+/* ========================================================================
+   Utility Classes
+   ======================================================================== */
+
+.cmama-mt-20 {
+	margin-top: 20px;
+}
+
+.cmama-mb-20 {
+	margin-bottom: 20px;
+}
+
+.cmama-text-center {
+	text-align: center;
+}
+
+.cmama-hidden {
+	display: none;
+}
