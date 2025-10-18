@@ -1,0 +1,261 @@
+/**
+ * Common calculator styles
+ *
+ * @package Calculator_Mama
+ * @since 1.0
+ */
+
+:root {
+    --cmama-primary-color: #0073aa;
+    --cmama-button-color: #0073aa;
+    --cmama-input-color: #ffffff;
+    --cmama-result-color: #28a745;
+    --cmama-border-radius: 4px;
+    --cmama-padding: 20px;
+}
+
+.cmama-calculator {
+    font-family: inherit;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: var(--cmama-border-radius);
+    padding: var(--cmama-padding);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cmama-calculator-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cmama-calculator-title {
+    margin: 0 0 10px 0;
+    color: var(--cmama-primary-color);
+    font-size: 1.5em;
+}
+
+.cmama-calculator-description {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.cmama-calculator-form {
+    margin-bottom: 20px;
+}
+
+.cmama-inputs {
+    margin-bottom: 20px;
+}
+
+.cmama-field {
+    margin-bottom: 15px;
+}
+
+.cmama-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cmama-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--cmama-border-radius);
+    background-color: var(--cmama-input-color);
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.cmama-input:focus {
+    outline: none;
+    border-color: var(--cmama-primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+.cmama-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cmama-button {
+    background-color: var(--cmama-button-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--cmama-border-radius);
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cmama-button:hover {
+    background-color: color-mix(in srgb, var(--cmama-button-color) 85%, black);
+    transform: translateY(-1px);
+}
+
+.cmama-button:active {
+    transform: translateY(0);
+}
+
+.cmama-button-secondary {
+    background-color: #6c757d;
+}
+
+.cmama-button-secondary:hover {
+    background-color: #5a6268;
+}
+
+.cmama-results {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: var(--cmama-border-radius);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cmama-results h4 {
+    margin: 0 0 15px 0;
+    color: var(--cmama-primary-color);
+    font-size: 1.2em;
+}
+
+.cmama-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.cmama-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: var(--cmama-border-radius);
+    border-left: 4px solid var(--cmama-result-color);
+}
+
+.cmama-result-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.cmama-result-value {
+    font-weight: bold;
+    color: var(--cmama-result-color);
+    font-size: 1.1em;
+}
+
+/* BMI Calculator specific styles */
+.cmama-calculator-bmi .cmama-bmi-chart {
+    margin-top: 20px;
+}
+
+.cmama-bmi-scale {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.cmama-bmi-range {
+    padding: 10px;
+    text-align: center;
+    border-radius: var(--cmama-border-radius);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.cmama-bmi-range.underweight {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.cmama-bmi-range.normal {
+    background-color: #e8f5e8;
+    color: #2e7d32;
+}
+
+.cmama-bmi-range.overweight {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.cmama-bmi-range.obese {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cmama-calculator {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .cmama-results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cmama-bmi-scale {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cmama-actions {
+        flex-direction: column;
+    }
+    
+    .cmama-button {
+        width: 100%;
+    }
+}
+
+/* Loading state */
+.cmama-calculator.loading .cmama-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.cmama-calculator.loading .cmama-button:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: cmama-spin 1s linear infinite;
+}
+
+@keyframes cmama-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error state */
+.cmama-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: var(--cmama-border-radius);
+    border: 1px solid #f5c6cb;
+    margin: 10px 0;
+}
+
+/* Success state */
+.cmama-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: var(--cmama-border-radius);
+    border: 1px solid #c3e6cb;
+    margin: 10px 0;
+}
