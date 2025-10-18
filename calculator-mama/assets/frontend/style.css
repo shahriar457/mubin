@@ -1,0 +1,10 @@
+:root{--cmama-primary:#4F46E5;--cmama-button:#4338CA;--cmama-input:#111827;--cmama-result:#065F46;--cmama-radius:8px;--cmama-padding:12px;--cmama-font:inherit}
+.cmama-wrap{font-family:var(--cmama-font);color:var(--cmama-input)}
+.cmama-card{border:1px solid #e5e7eb;border-radius:var(--cmama-radius);padding:var(--cmama-padding);background:#fff}
+.cmama-field{margin-bottom:12px}
+.cmama-label{display:block;font-weight:600;margin-bottom:6px}
+.cmama-input{width:100%;padding:10px;border-radius:6px;border:1px solid #d1d5db}
+.cmama-button{background:var(--cmama-button);color:#fff;padding:10px 14px;border-radius:6px;border:none;cursor:pointer}
+.cmama-result{margin-top:12px;color:var(--cmama-result);font-weight:700}
+.cmama-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:640px){.cmama-grid{grid-template-columns:repeat(2,1fr)}}
